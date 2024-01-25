@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message</title>
+    <link rel="stylesheet" href="stylemessage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<header>
+    <header><h1>Write your message below!</h1></header>
+
+<form  class= "form" action="/" method="post">
+    <!-- Hidden fields for original values -->
+    <input type="hidden" name="originalId" value="<%= idnum %>">
+    <input type="hidden" name="originalMhead" value="<%= mhead %>">
+    <input type="hidden" name="originalShead" value="<%= shead %>">
+    <input type="hidden" name="originalText" value="<%= text %>">
+    <input type="hidden" name="originalAuthor" value="<%= author %>">
+  
+    <!-- Updated fields -->
+    <label for="imp">Unique Identifier<input type="number" id="imp" placeholder="12" required name="idnum" value="<%= idnum %>"></label>
+    <label for="mhead">Main heading<input type="text" id="mhead" placeholder="life is long" required name="mhead" value="<%= mhead %>"></label>
+    <label for="shead">Sub heading<input type="text" id="shead" placeholder="it's a beautiful day" name="shead" value="<%= shead %>"></label>
+    <label for="textarea">Paragraph<textarea id= "textarea" placeholder="hello, this is an example post" required name="text" rows="20" cols="50"><%= text %></textarea></label>
+    <label for="author">Author<input type="text" id="author" placeholder="Robert Wilson" name="author" value="<%= author %>"></label>
+    <button class = "button" type="submit">Submit</button>
+  </form>
+  
+  
+
+    
+</body>
+</html>

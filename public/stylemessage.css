@@ -1,0 +1,112 @@
+input, textarea {
+    display: block;
+    width:90%;
+    margin: 5px auto;
+}
+
+label {
+   text-align: center;
+   font-size: 2rem;
+   
+   font-weight: 500;
+   opacity: 90%;
+}
+
+header h1 {
+    background-color: aquamarine;
+    font-weight: 600;
+    padding:20px;
+    margin: 10px;
+    padding:5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px;
+    padding-top:20px;
+
+}
+
+
+header {
+    background-color: aquamarine;
+    height: 100px;
+    margin-bottom: 100px;
+
+}
+body {background-color: rgb(217, 245, 236);
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 40px;
+    padding: 10px 20px;
+    width: 60%;
+    margin:auto auto;
+    font-size: 1.5rem;
+    color: black;
+    background-color: rgb(214, 226, 236);
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+
+}
+
+#imp {
+    color: black;
+    width:5%;
+
+}
+
+#mhead {
+    color: black;
+
+}
+
+#shead {
+    color: black;
+    font-size: 1.4rem;
+}
+
+#author {color: black;
+    font-size: 1.4rem;
+    width:20%;
+
+
+}
+
+#textarea {
+    font-size: 1rem;
+  
+    padding: 10px 20px;
+    width: 60%;
+    margin:auto auto;
+   
+    color: black;
+    background-color: rgb(214, 226, 236);
+   
+
+}
+
+.button {
+    background-color: rgba(49, 93, 4, 0.56);
+    width:50%;
+    text-align: center;
+    margin:auto;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: chartreuse;
+}

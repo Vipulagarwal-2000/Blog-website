@@ -1,0 +1,67 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogWeb App</title>
+    <link rel="stylesheet" href="stylesmain.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Blog App.</h1>
+    </header>
+
+
+    <form method="get" action="/create">
+    <button class= "create" type="submit">Create Post</button>
+    </form>
+
+<div class="contentbox">
+    <% for(var i = 0; i < vdata.length; i++) { %>
+        <div class="item">
+            <div class="content">
+            <h1><%- vdata[i].bhead %></h1></div>
+           <div class="content"><h2> <%- vdata[i].lhead %></h2></div>
+           <div class="content"><p><%- vdata[i].input %></p></div> 
+           <div class="content"><p><strong> <%- vdata[i].writer %></strong></p></div>
+            <div class="hole">
+               <%- date %>
+                <form method="post" action="/patch">
+                    <input type="hidden" name="ctpiId" value="<%- vdata[i].id %>">
+                    <input type="hidden" name="ctpiMhead" value="<%- vdata[i].mhead %>">
+                    <input type="hidden" name="ctpiShead" value="<%- vdata[i].shead %>">
+                    <input type="hidden" name="ctpiText" value="<%- vdata[i].text %>">
+                    <input type="hidden" name="ctpiAuthor" value="<%- vdata[i].author %>">
+                  
+                    <button class= "update" type="submit">update</button>
+                  </form> 
+                <form method="post" action="/delete">
+                    <input type="hidden" name="contentToDeleteId" value="<%- vdata[i].id %>">
+                    <button class= "delete" type="submit">Delete</button>
+                </form>
+                
+            </div>
+        </div>
+    <% } %>
+</div>
+
+
+ 
+
+
+     
+
+    
+
+
+
+ 
+
+
+     
+
+    
+</body>
+</html>
